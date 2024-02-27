@@ -6,18 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import MyButton from './chap01/MyButton';
 import DrinkList from './chap01/DrinkList';
 import Clock from './chap02/Clock';
+import ProfileList from './chap03/ProfileList';
+import AlarmList from './chap04/AlarmList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-setInterval(() => {
-
-  root.render(
-    <React.StrictMode>
-      <DrinkList />
-      <MyButton />
-      <Clock />
-    </React.StrictMode>
-  );
-}, 1000);
+root.render(
+  <React.StrictMode>
+    <DrinkList />
+    <MyButton />
+    <Clock />
+    <AlarmList />
+    <ProfileList />
+  </React.StrictMode>
+);
 
 reportWebVitals();
