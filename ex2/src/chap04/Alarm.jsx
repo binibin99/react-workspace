@@ -19,6 +19,18 @@ class Alarm extends React.Component {
         this.state = {};
     }
 
+    componentDidMount() {
+        console.log(`알람${this.props.id}의 componetDidMount() 호출됨`);
+    }
+
+    componentDidUpdate() {
+        console.log(`알람${this.props.id}의 componetDidUpdate() 호출됨`);
+    }
+
+    componentWillUnmount() {
+        console.log(`알람${this.props.id}의 componetWillUnmount() 호출됨`);
+    }
+
     // render() 메서드를 오버라이드 해서 원하는 엘리먼트를 화면에 그린다
     render() {
         return (
